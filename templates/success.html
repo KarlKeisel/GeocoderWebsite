@@ -1,0 +1,20 @@
+{%extends "index.html"%}
+
+<!-- Adds the df table and the download button if it is a correct .csv file -->
+
+{%block content%}
+<div class="success">
+
+    {% for table in tables %}
+            {{titles[loop.index]}}
+            {{ table|safe }}
+    {% endfor %}
+
+</div>
+<!-- Adds the download button -->
+<div class="download">
+    {% include btn ignore missing %}
+</div>
+{%endblock%}
+
+

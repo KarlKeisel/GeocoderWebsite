@@ -1,0 +1,49 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: #444444;
+    color: #999999;
+
+}
+
+.container {
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.container h1 {
+    font-family: "Droid Serif", "DejaVu Serif", "STIX", serif;
+    font-size: 30px;
+    margin-top: 80px;
+}
+
+.container h3 {
+    margin: 30px;
+}
+
+.file-upload {
+    width: 70px;
+    align-content: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.download {
+    width: 70px;
+    align-content: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.message {
+    font-family: "Droid Serif", "DejaVu Serif", "STIX", serif;
+    font-size: 20px;
+    color: #ff9999;
+}
+
+.success {
+    width: 80%;
+    height: 30%;
+    padding: 20px;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Geocoding Webapp</title>
+    <link href="../static/css/main.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Geocoding Webapp</h1>
+        <h3>Upload a .csv file that has full addresses inside a column labelled 'address', 'ADDRESS', or 'Address'. <br>
+        Then you can download your same .csv file with the latitude and longitude included as new columns.</h3>
+         <!-- Error message if .csv does not load -->
+    <div class="message">
+        {{ text | safe }}
+    </div>
+    </div>
+
+    <form action="{{url_for('success')}}" method="POST" enctype="multipart/form-data">
+        <div class="file-upload">
+            <input type="file" name="file">
+            <br>
+            <button type="submit"> Upload File </button>
+        </div>
+
+    </form>
+
+    <!-- Used to insert df table and download button -->
+    <div class="insert">
+        {%block content%}
+        {%endblock%}
+    </div>
+
+</body>
+</html>
